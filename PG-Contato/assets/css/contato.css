@@ -12,8 +12,10 @@ autorizadas podem modificar*/
     margin-right: 10vh;
 }
 .container1 .titulo{
+    color: #212529;
     margin-top: 6vh;
-    font-size: 2.5rem;font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 .container1 .desc{
     margin-bottom: 15vh;
