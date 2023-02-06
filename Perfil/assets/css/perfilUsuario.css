@@ -1,0 +1,87 @@
+.perfil{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.perfil-usuario{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    width: 100%;
+    height: 100vh;
+}
+.container-geral{
+    width: 50%;
+}
+.conteudo-usuario{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    border-bottom: #2b2d42 solid 0.70vh;
+    box-shadow: -1px 2px 4px rgba(0,0,0,.25), 1px 1px 3px rgba(0,0,0,.1);
+}
+.info{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    position: relative;
+    left: 2vh;
+}
+.imagem-perfil{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 5vh;
+    margin-left: 2vh;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,.25);
+    backdrop-filter: blur( 10.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.imagem-perfil img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.nome-usuario, .email-usuario, .exp, .social, .contato-usuario{
+    display: flex;
+    justify-content: left;
+    position: relative;
+    top: 10vh;
+    margin-top: 5px;
+    border-bottom: #2b2d42 solid 0.70vh
+}
+.nome-usuario{
+    font-size: 2rem;
+    width: 30pc;
+}
+.contato-usuario{
+    font-size: 2rem;
+    width: 30pc;
+}
+.exp{
+    font-size: 1.2rem;
+    height: 100px;
+    color: #333;
+}
+.social{
+    font-size: 1.2rem;
+    height: 100px;
+    border-bottom: #2b2d42 solid 0.70vh
+}
+.social a{
+    text-decoration: none;
+}
+.social li, .contato li{
+    display: grid;
+    justify-content: left;
+    flex-direction: column;
+    list-style: none;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 5px;
+}

@@ -1,0 +1,34 @@
+cores usadas
+cor de fundo, fontes brancas e outras fontes {
+    fundo e fonte (brancas)= #fffdf7
+    fonte = #000000
+    text-shadow = #b9b9b9
+    text-decoration = #2b2d42
+}
+footer{
+    fundo = #1f1f1f
+    fonte =  #f8f8f8
+    text-shadow = #e5e5e5
+}
+
+scrollbar{
+    fundo = #adb5bd
+    fundo = #e9ecef
+}
+container 1 e 2 pg Login/usuario/ong{
+    fundo = #7ea2f1a8 (tem transparencia)
+    font = #fffdf7
+    button = #fbc55f{
+        font = #333
+        box-shadow = #333
+        border = black (#000)
+    }
+    border-top/bottom/left(container 2 right) = #2b2d42
+    text shadow = rgba(0,0,0,0.53) container 2 (rgba(0,0,0,0.33)
+}
+estilo do input (pradão???){
+    border = #cdd6dd
+    border-bottom/right = #fbc55f
+    box-shadow = rgba(0,0,0,0.15)
+    input-placeholder = #6c757d6b (tem transparencia)
+}

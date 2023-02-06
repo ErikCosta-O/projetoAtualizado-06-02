@@ -1,0 +1,41 @@
+.titulo-topo{
+    display: grid;
+    justify-content: center;
+    position: relative;
+    float: left;
+    text-align: left;
+    width: 40pc;
+    margin-left: 10vh;
+    top: -10vh;
+}
+.titulo-topo p{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.section2{
+    width: 100%;
+    position: relative;
+    top: 10vh;
+}
+.titulo{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    top: 10vh;
+}
+.titulo p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.loja{
+    position: fixed;
+    right: 5px; 
+    z-index:20000; 
+    cursor: pointer;
+    bottom: 9.8vh;
+    z-index:20000; 
+}
+.loja img{
+    width: 70px;
+}
