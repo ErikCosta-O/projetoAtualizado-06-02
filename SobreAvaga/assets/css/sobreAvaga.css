@@ -1,7 +1,7 @@
 .center{
     display: flex;
     justify-content: center;
-    margin-bottom: 90vh;
+    margin-bottom: 30vh;
 }
 .img{
     display: flex;
@@ -16,8 +16,8 @@
     width: 450px;
     height: 300px;
     border-radius: 2vh;
-    border-top: #2b2d42 solid 0.40vh; border-left:#2b2d42 solid 0.40vh;
-    border-right:#2b2d42 solid 0.60vh; border-bottom: #2b2d42 solid 0.60vh;    
+    border-top: #2b2d42 solid 0.40vh; border-left:#2b2d42 solid 0.20vh;
+    border-right:#2b2d42 solid 0.60vh; border-bottom: #2b2d42 solid 0.20vh;    
 }
 .conteudo{
     display: flex;
@@ -29,6 +29,7 @@
     margin-left: 2vh;
 }
 .desc-conteudo{
+    color: #212529;
     width: 100%;
     height: 90%;
 }
@@ -36,19 +37,21 @@
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
-    color: #000000;
+    color: #212529;
     font-weight: 600;
 }
 .desc-vaga, .nome-vaga{
     display: flex;
+    justify-content: center;
+    text-align: center;
     color: #000000;
     justify-content: flex-start;
     margin-left: 2vh;
-    border-bottom: #2b2d42 2px solid;
 }
 .desc-vaga{
-    border-radius: 0vh 2vh;
-    border-left: #2b2d42 2px solid;
+    border-radius: 2vh 0vh;
+    border-top: #2b2d42 0.50vh solid;
+    border-left: #2b2d42 0.50vh solid;
 }
 .nome-vaga p{
     font-size: 2rem;
@@ -62,6 +65,8 @@
     height: 20pc;
     text-align: left;
     font-style: oblique;
+    color: #212529;
+    margin: 5px;
 }
 button{
     display: flex;
@@ -72,7 +77,7 @@ button{
     font-weight: 900;
     align-items: center;
     font-size: 1.2rem;
-    color: #333;
+    color: #212529;
     border: 0.2vh solid black;
     border-radius: 0.8vh;
     box-shadow: 0.1em 0.1em #333;
