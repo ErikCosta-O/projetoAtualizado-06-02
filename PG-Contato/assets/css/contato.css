@@ -8,11 +8,11 @@ autorizadas podem modificar*/
     top: 25vh;
 }
 .container1{
+    color: #212529;
     width: 600px;
     margin-right: 10vh;
 }
 .container1 .titulo{
-    color: #212529;
     margin-top: 6vh;
     font-size: 2.5rem;
     font-weight: 600;
