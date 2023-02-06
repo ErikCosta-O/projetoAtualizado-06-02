@@ -43,6 +43,22 @@
     border-bottom: #fbc55f solid 0.50vh;
     border-right: #fbc55f solid 0.50vh;
 }
+.container1 .data #class{
+    margin-top: 10px;
+    border-radius: 1vh;
+    font-size: 18px;
+    padding-left: 5px;
+    width: 93%;
+    height: 35px;
+    border: #cdd6dd solid 0.50vh;
+    border-bottom: #fbc55f solid 0.50vh;
+    border-right: #fbc55f solid 0.50vh;
+}
+#class:focus{
+    outline: 0;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+    transform: scale(1.02);
+}
 form{
     display: grid;
     grid-template-columns: auto auto;
