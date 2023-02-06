@@ -1,4 +1,5 @@
 .perfil{
+    color: #212529;
     font-size: 3rem;
     font-weight: 500;
 }
@@ -27,6 +28,7 @@
     flex-direction: column;
     position: relative;
     left: 2vh;
+    color: #212529;
 }
 .imagem-perfil{
     display: flex;
