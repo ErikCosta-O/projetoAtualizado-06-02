@@ -25,12 +25,14 @@ h2{
   justify-content: center;
   font-weight: 600;
   padding: 10px;
+  color: #212529;
 }
 .card-details p{
   padding: 10px;
   text-align: left;
   height: 150px;
   font-size: 15px;
+  color: #333;
 }
 .card .saiba{
   display: flex;

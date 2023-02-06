@@ -9,6 +9,7 @@
     top: -10vh;
 }
 .titulo-topo p{
+    color: #212529;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -27,6 +28,7 @@
 .titulo p{
     font-size: 1.5rem;
     font-weight: 600;
+    color: #212529;
 }
 .loja{
     position: fixed;
