@@ -37,7 +37,7 @@ nav ul{
   padding: 10px;
 }
 nav a {
-  color: #000000;
+  color: #212529;
   text-decoration: none;
   padding: 10px;
 }
@@ -50,7 +50,7 @@ nav a :hover{
 /*Footer*/
 .footer-distributed {
   position: absolute;
-  top: 88.6vh;
+  bottom: 0;
   background: #1f1f1f; /* fallback for old browsers */
   box-sizing: border-box;
   width: 100%;
