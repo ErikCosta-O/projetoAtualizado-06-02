@@ -33,6 +33,22 @@
     justify-content: center;
     margin-top: 5px;
 }
+.container1 .data #redeSocial{
+    margin-top: 10px;
+    border-radius: 1vh;
+    font-size: 18px;
+    padding-left: 5px;
+    width: 93%;
+    height: 35px;
+    border: #cdd6dd solid 0.50vh;
+    border-bottom: #fbc55f solid 0.50vh;
+    border-right: #fbc55f solid 0.50vh;
+}
+#redeSocial:focus{
+    outline: 0;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+    transform: scale(1.02);
+}
 .container1 .data input{
     margin-top: 5px;
     border-radius: 1vh;
@@ -55,7 +71,7 @@ form{
     grid-template-columns: auto auto;
     width: 600px;
     position: relative;
-    bottom: 10vh;
+    bottom: 5vh;
 }
 input:focus{
     outline: 0;
