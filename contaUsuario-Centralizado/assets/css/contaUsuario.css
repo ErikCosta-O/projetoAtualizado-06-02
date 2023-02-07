@@ -96,7 +96,6 @@ button:active {
     box-shadow: 0.05em 0.05em #000;
 }
 #entrar a{
-    color: #000;
     text-decoration: none;
 }
 .entrarContato{
@@ -115,7 +114,7 @@ button:active {
 .entrarContato .title2{
     width: 400px;
     font-size: 1.5rem;
-    color: #333;
+    color: #212529;
     text-align: left;
 }
 .entrarContato .btn2{
