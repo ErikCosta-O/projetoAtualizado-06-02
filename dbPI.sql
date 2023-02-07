@@ -1,4 +1,3 @@
-
 drop database dbPI;
 
 create database dbPI;	
@@ -7,29 +6,50 @@ show databases;
 
 use dbPI;
 
+
 create table tbFuncionario(
 codFunc int auto_increment,
 Nome varchar(45) not null,
-CPF varchar (45) unique not null,
-Telefone varchar(50) not null,
+CPF varchar (16) unique not null,
+dataNascimento date not null,
+registroFunc varchar(7) not null,
+CTPS varchar(35) unique not null,
+Serie varchar(4) not null,
+Tel varchar(15) not null,
 Email varchar(45) not null,
-Logradouro varchar(255) not null,
-Cargo varchar(45) not null,
-Password varchar(45) not null,
+Endereco varchar(80)not null,
+Numero varchar(7) not null,
+Complemento varchar(45) not null,
+CEP varchar(10) not null,
+Bairro varchar(45) not null,
+Cidade varchar(45) not null,
+Cargo varchar(15) not null,
 primary key (codFunc)
 );
 
+
 create table tbUsuario(
 codUsuario int auto_increment,
-Nome varchar(45) not null,
-Email varchar (100) not null,
-Password varchar(45) not null,
-CPF varchar(45) unique not null,
-Telefone varchar(45) not null,
-Experiencia varchar(45),
-RedeSocial varchar (150),
+Login varchar(20) unique not null,
+Senha varchar(20) not null,
 codFunc int not null,
 primary key (codUsuario),
+foreign key (codFunc) references tbFuncionario (codFunc)
+);
+
+create table tbVoluntario(
+codVoluntario int auto_increment,
+Nome varchar(45) not null,
+dataNascimento date not null,
+Email varchar (100) not null,
+Senha varchar(45) not null,
+CPF varchar(45) unique not null,
+Tel varchar(45) not null,
+Experiencia varchar(12),
+RedeSocial varchar (20),
+Url varchar(100),
+codFunc int not null,
+primary key (codVoluntario),
 foreign key (codFunc) references tbFuncionario (codFunc)
 );
 
@@ -37,72 +57,127 @@ create table tbONG(
 codONG int auto_increment,
 Nome varchar(45) not null,
 Email varchar(100) not null,
-Tel char(18) not null,
-CNPJ char(45),
-Endereco varchar(255) not null,
-Categoria varchar(255) not null,
-Descricao varchar(255) not null,
-WebSite varchar (255) unique not null,
-RedeSocial varchar (255),
+Senha varchar(100) not null,
+Tel varchar(18) not null,
+CNPJ varchar(25),
+Endereco varchar(100) not null,
+Numero varchar (10) not null,
+Complemento varchar(40)not null,
+CEP varchar(10) not null,
+Bairro varchar(45) not null,
+Cidade varchar(45) not null,
+Categoria varchar(15) not null,
+Descricao varchar(150) not null,
+WebSite varchar (75),
+RedeSocial varchar (35),
+Url varchar(100),
 codFunc int not null,
-codUsuario int not null,
 primary key (codONG),
-foreign key (codFunc) references tbFuncionario (codFunc),
-foreign key (codUsuario) references tbUsuario (codUsuario)
+foreign key (codFunc) references tbFuncionario (codFunc)
 );
 
 create table tbLoja(
 codLoja int auto_increment,
-Produtos varchar(50),
+nomeProduto varchar(45) not null,
 Valor varchar (10) not null,
-Quantidade varchar(10) not null,
-Descricao varchar(50) ,
+Quantidade varchar (5) not null,
+Descricao varchar(45) not null,
 codFunc int not null,
 primary key (codLoja),
 foreign key (codFunc) references tbFuncionario (codFunc)
 );
-	
+
+
+create table tbVenda(
+codVenda int not null auto_increment,
+cpfCliente varchar(15) not null,
+nomeprodutoVenda varchar(45) not null,
+valorVenda varchar (10) not null,
+quantidadeVenda int not null,
+dataVenda date not null,
+Pagamento varchar(50) not null,
+codFunc int not null,
+codLoja int not null,
+primary key (codVenda),
+foreign key (codFunc) references tbFuncionario (codFunc),
+foreign key (codLoja) references tbLoja (codLoja)
+);
+
+create table tbContato(
+codContato int not null auto_increment,
+Nome varchar(155) not null,
+Email varchar(155) not null,
+Mensagem varchar(255) not null,
+primary key(codContato)
+);
+
+
+
+
 desc tbFuncionario;
 
-insert into tbFuncionario (Nome,CPF,Telefone,Email,Logradouro,Cargo,Password) values ('Thaina','123.456.788-10','(011)1234-5578','thaina@tg.com','Av Paulista,12','Administrador','Sen@c01');
-insert into tbFuncionario (Nome,CPF,Telefone,Email,Logradouro,Cargo,Password) values ('Victoria','123.456.689-10','(011)1233-5678','victoria@tg.com','Av Morumbi,22','Supervisora','En@ble');
-insert into tbFuncionario (Nome,CPF,Telefone,Email,Logradouro,Cargo,Password) values ('Amanda','123.456.589-10','(011)1233-5771','amanda@tg.com','Av Jabaquara,552','SAC','G@@gl3');
-insert into tbFuncionario (Nome,CPF,Telefone,Email,Logradouro,Cargo,Password) values ('Consiglio','123.451.589-12','(011)1233-5777','caio@tg.com','Av Moema,912','SAC','T@k0eR');
-insert into tbFuncionario (Nome,CPF,Telefone,Email,Logradouro,Cargo,Password) values ('Erik','123.156.589-10','(011)1244-5771','erik@tg.com','Av Pacaembu,145','Programador','R@b0nS1X');
-insert into tbFuncionario (Nome,CPF,Telefone,Email,Logradouro,Cargo,Password) values ('Jose Hugo','000.000.000-1','(011)1233-5771','jose.hssilva@tg.com','Av Heliopolis,788','Suporte','@ble55');
+insert into tbFuncionario (Nome,CPF,dataNascimento,registroFunc,CTPS,Serie,Tel,Email,Endereco,Numero,Complemento,CEP,Bairro,Cidade,Cargo) values('Thaina Araujo','123.456.788-10','1980.01.25','0000-01','907.54875.46-1','3554','(011)1234-5578','thaina@tg.com','Av Paulista','12','Apt 1','0471-000','Consolacao','Sao Paulo','Administrador');
+insert into tbFuncionario (Nome,CPF,dataNascimento,registroFunc,CTPS,Serie,Tel,Email,Endereco,Numero,Complemento,CEP,Bairro,Cidade,Cargo) values('Victoria Amorim','123.456.689-10','1982.02.17','0000-02','108.95086.55-4','1254','(011)1233-5678','victoria@tg.com','Av Morumbi','22','Casa 4','04751-000','Ibirapuera','Sao Paulo','Administrador');
+insert into tbFuncionario (Nome,CPF,dataNascimento,registroFunc,CTPS,Serie,Tel,Email,Endereco,Numero,Complemento,CEP,Bairro,Cidade,Cargo) values ('Erik Costa de Oliveira','123.156.589-10','1984.02.17','0000-03','122.10001.15-7','1478','(011)1244-5771','erik@tg.com','Av Pacaembu','145','Apt 12','04751-000','Vista Bela','Sao Paulo','Loja');
+insert into tbFuncionario (Nome,CPF,dataNascimento,registroFunc,CTPS,Serie,Tel,Email,Endereco,Numero,Complemento,CEP,Bairro,Cidade,Cargo) values ('Caio Cesar Consiglio','123.451.589-12','1980.02.17','0000-04','113.10001.13-2','1458','(011)1233-5777','caio@tg.com','Av Moema','912','Casa 5','04741-000','Brooklin','Sao Paulo','SAC');
+insert into tbFuncionario (Nome,CPF,dataNascimento,registroFunc,CTPS,Serie,Tel,Email,Endereco,Numero,Complemento,CEP,Bairro,Cidade,Cargo) values ('Jose Hugo','000.000.000-11','1997.05.31','0000-05','100.10001.17-1','2147','(011)1233-5645','jose@tg.com','Rebouca','254','Apt 12','04751-185','Oscar Freire','Sao Paulo','SAC');
+
+--update  tbFuncionario  set Tel ='(11)55555-0000',Email ='Fulano@gmail.com',Endereco='Av Paulista',Numero = '444',Complemento= 'Casa 1',CEP='01311-100',Bairro='Vela Vista',Cidade='São Paulo',Cargo='Administrador' where registroFunc = 5--
 
 select * from tbFuncionario;
 
 desc tbUsuario;
 
-insert into tbUsuario (Nome,Email,Password,CPF,Telefone,Experiencia,RedeSocial,codFunc) values('Roberto Carlos','rb_pro@hotmail.com','P@ssword','012.456.789-11','(011)4002-8922','Avancado','Linkedln / Github / Twiter',4);
-insert into tbUsuario (Nome,Email,Password,CPF,Telefone,Experiencia,RedeSocial,codFunc) values('Sasuke Uchiha','sasuke.uchiha@hotmail.com','L4$$word','012.456.784-11','(011)4002-8422','Basico','Github / Twiter',5);
-insert into tbUsuario (Nome,Email,Password,CPF,Telefone,Experiencia,RedeSocial,codFunc) values('Hinata Uzumaki','hinata.uzumaki@hotmail.com','M8$$Vord','012.456.784-17','(011)4444-8556','Nao tenho','Twiter',5);
-insert into tbUsuario (Nome,Email,Password,CPF,Telefone,Experiencia,RedeSocial,codFunc) values('Marcos','Marcos_YT@hotmail.com','S4yp$','012.456.784-00','(011)4772-8422','Intermediario','Github',4);
+insert into tbUsuario (Login,Senha,codFunc) values ('admin-thai',SHA1('gabrielti104'),1);
+insert into tbUsuario (Login,Senha,codFunc) values ('admin-vick',SHA1('photografic'),2);
+insert into tbUsuario (Login,Senha,codFunc) values ('dev-erick',SHA1('motorista'),3);
+insert into tbUsuario (Login,Senha,codFunc) values ('sac-caio',SHA1('cabeloblue'),4);	
+insert into tbUsuario (Login,Senha,codFunc) values ('sac-jhss',SHA1('l0s3'),5);
 
 select * from tbUsuario;
 
 
+desc tbVoluntario;
+
+insert into tbVoluntario (Nome,dataNascimento,Email,Senha,CPF,Tel,Experiencia,RedeSocial,Url,codFunc) values ('Erik Oliveira','1997-06-27','Erick.O@senacsp.com',SHA1('12345'),'111.111.111-11','(011)91234-5678','Iniciante','Github','',1);
+insert into tbVoluntario (Nome,dataNascimento,Email,Senha,CPF,Tel,Experiencia,RedeSocial,Url,codFunc) values ('Herick Cesar','1996-08-31','Herick.C@senacsp.com',SHA1('123456'),'111.111.111-12','(011)91234-5659','Iniciante','Github','',1);
+insert into tbVoluntario (Nome,dataNascimento,Email,Senha,CPF,Tel,Experiencia,RedeSocial,Url,codFunc) values ('Wesley','1994-12-25','Wesley@senacsp.com',SHA1('123457'),'111.111.111-13','(011)91234-5648','Iniciante','Linkdlin','',2);
+insert into tbVoluntario (Nome,dataNascimento,Email,Senha,CPF,Tel,Experiencia,RedeSocial,Url,codFunc) values ('Gabriel Souza','1990-12-24','gabriel.S@senacsp.com',SHA1('123459'),'111.111.111-17','(011)91234-5677','Iniciante','Github','',2);
+
+
+select * from tbVoluntario;
+
 desc tbONG;
 
-insert into tbONG (Nome,Email,Tel,CNPJ,Endereco,Categoria,Descricao,WebSite,RedeSocial,codFunc,codUsuario) values ('Fome Zero','fomezero@gmail.com','(011)9999-8888','44/0001-15','Rua HenriqueMartins,567 JardimSao Goncalo,SP','Alimentacao','A AlimentaçãodoBR','www.fomezero.com.br','@Fome_zero','5','2');
-insert into tbONG (Nome,Email,Tel,CNPJ,Endereco,Categoria,Descricao,WebSite,RedeSocial,codFunc,codUsuario) values ('Internet 100%','internet100%@uol.com','(011)0000-8888','47/0501-15','Rua MartinsJuan,47 EmbudasArtes,SP','Conexao','Internet para todos ','www.internet100.org.br','@internet_100%','4','1');
-insert into tbONG (Nome,Email,Tel,CNPJ,Endereco,Categoria,Descricao,WebSite,RedeSocial,codFunc,codUsuario) values ('ProjArrastao','projarrastao@gmail.com','(011)9999-6666','44/0441-15','Rua Chaves Chapolin,77 CapaoRedondo,SP','Humanidade','Futuro melhor para todos ','www.projarrastao.org.br','@ProjArrastão','5','3');
-insert into tbONG (Nome,Email,Tel,CNPJ,Endereco,Categoria,Descricao,WebSite,RedeSocial,codFunc,codUsuario) values ('Raio de Sol','raio.sol@gmail.com','(011)9944-8558','96/0001-15','Av Folha leve,13,São Paulo SP','Agricultura','Alimentacao sem veneno ','www.raiosol.org.br','@Raio_sol','5','2');
-insert into tbONG (Nome,Email,Tel,CNPJ,Endereco,Categoria,Descricao,WebSite,RedeSocial,codFunc,codUsuario) values ('Luz+','luz+@gmail.com','(011)9944-8548','','Av FolhadeSP,17,São Paulo SP','Bem-estar','Conversa saudavel','www.luz+.br','@luz','4','2');
+insert into tbONG (Nome,Email,Senha,Tel,CNPJ,Endereco,Numero,Complemento,CEP,Bairro,Cidade,Categoria,Descricao,WebSite,RedeSocial,codFunc) values('Arroz e Feijao','bomprato@mail.com',SHA1('@%#S215548R'),'(11)1234-5678','63.958.777/0001-83','Av Paulista','254','Conj AB445','04341-010','Bela Vista','São Paulo','Alimentacao','Alimento para todos','','@BoaComida',1);
+insert into tbONG (Nome,Email,Senha,Tel,CNPJ,Endereco,Numero,Complemento,CEP,Bairro,Cidade,Categoria,Descricao,WebSite,RedeSocial,codFunc) values('TrapoChique','doeroupa@mail.com',SHA1('@#488#$'),'(11)1234-4478','','Av 23 de Maio','22','Conj 144','04751-040','Heliopolis','São Paulo','Vestimento','Roupa para todos','www.wordpress.trapochique.com','@TrapoChique',2);
 
 select * from tbONG;
 
+
 desc tbLoja;
 
-insert into tbLoja (Produtos,Valor,Quantidade,Descricao,codFunc) values('Bolsa','R$ 30,50',' 10','Feita de materiais reciclaveis','1');
-insert into tbLoja (Produtos,Valor,Quantidade,Descricao,codFunc) values('Camiseta tamanho diversos','R$ 20,50',' 30','Feita de materiais reciclaveis','1');
-insert into tbLoja (Produtos,Valor,Quantidade,Descricao,codFunc) values('Pagina Exclusiva','R$ 15,50',' 30','Material de apoio e conteudo exclusivo','1');
-insert into tbLoja (Produtos,Valor,Quantidade,Descricao,codFunc) values('Tablet','R$ 100,00',' 30','Ideal para estudos','1');
-insert into tbLoja (Produtos,Valor,Quantidade,Descricao,codFunc) values('Lapis','R$ 2,00',' 10','Ideal para escrita e desenho','1');
-insert into tbLoja (Produtos,Valor,Quantidade,Descricao,codFunc) values('Oculos','R$ 20,00',' 30','Armacao de Oculos','1');
-insert into tbLoja (Produtos,Valor,Quantidade,Descricao,codFunc) values('Chaveiro','R$ 10,00',' 30','Chaveiro Personalizado','1');
-insert into tbLoja (Produtos,Valor,Quantidade,Descricao,codFunc) values('Case de Celular','R$ 20,00',' 30','Diversos modelos','1');
-insert into tbLoja (Produtos,Valor,Quantidade,Descricao,codFunc) values('Caderno Universitario','R$ 20,00',' 30','20 Materias e 160 Folhas','1');
+insert into tbLoja (nomeProduto,Valor,Quantidade,Descricao,codFunc) values('Bolsa','R$30,00','10','Feita de materiais reciclaveis',2);
+insert into tbLoja (nomeProduto,Valor,Quantidade,Descricao,codFunc) values('Camiseta','R$ 30,00','30','Feita de materiais reciclaveis',1);
+insert into tbLoja (nomeProduto,Valor,Quantidade,Descricao,codFunc) values('Pagina Exclusiva','R$ 30,00','30','Material de apoio e conteudo exclusivo',2);
+insert into tbLoja (nomeProduto,Valor,Quantidade,Descricao,codFunc) values('Oculos','R$15,00','30','Armacao de Oculos',1);
+insert into tbLoja (nomeProduto,Valor,Quantidade,Descricao,codFunc) values('Chaveiro','R$10,00','30','Chaveiro Personalizado',2);
+insert into tbLoja (nomeProduto,Valor,Quantidade,Descricao,codFunc) values('Case de Celular','R$10,00','30','Diversos modelos',2);
+insert into tbLoja (nomeProduto,Valor,Quantidade,Descricao,codFunc) values('Caderno','R$15,00','30','20 Materias e 160 Folhas',2);
+insert into tbLoja (nomeProduto,Valor,Quantidade,Descricao,codFunc) values('Acesso VIP','R$25,00','10','Eventos e Palestras',1);
 
 select * from tbLoja;
+
+
+desc tbVenda;
+insert into tbVenda(cpfCliente,nomeprodutoVenda,valorVenda,quantidadeVenda,dataVenda,Pagamento,codFunc,codLoja) values('415.875.987-78','Bolsa','R$30,00',1,'2022.12.27','Debito',1,1);
+select * from tbVenda;
+
+
+desc tbContato;
+insert into tbContato (Nome,Email,Mensagem) values ('Fulano','fulalo@mail.com','No meu xinélo da humildade eu gostaria muito de ver o Neymar e o Ganso. Por que eu acho que.... 11 entre 10 brasileiros gostariam. Você veja, eu já vi, parei de ver. Voltei a ver, e acho que o Neymar e o Ganso têm essa capacidade de fazer a gente olhar.
+
+Se hoje é o dia das crianças... Ontem eu disse: o dia da criança é o dia da mãe, dos pais, das professoras, mas também é o dia dos animais, sempre que você olha uma criança, há sempre uma figura oculta, que é um cachorro atrás. O que é algo muito importante!
+
+Ai você fala o seguinte: "- Mas vocês acabaram isso?" Vou te falar: -"Não, está em andamento!" Tem obras que "vai" durar pra depois de 2010. Agora, por isso, nós já não desenhamos, não começamos a fazer projeto do que nós "podêmo fazê"? 11, 12, 13, 14... Por que é que não?');
+select * from tbContato;	
