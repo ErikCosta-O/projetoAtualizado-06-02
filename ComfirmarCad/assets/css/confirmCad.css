@@ -2,18 +2,19 @@
 .geral{
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 .container1{
-    background-color: #7ea3f1a8;
-    width: 400px;
-    height: 390px;
-    border-radius: 10px 0 0 10px;
+    width: 600px;
+    height: 490px;
+    border-radius: 2vh;
     color: #fffdf7;
     display: grid;
+    margin-bottom: 5vh;
     justify-content: center;
     border-top: #2b2d42 solid 0.40vh;
     border-left:#2b2d42 solid 0.40vh;
+    border-right:#2b2d42 solid 0.40vh;
     border-bottom: #2b2d42 solid 0.70vh;
 }
 input:focus{
@@ -26,19 +27,23 @@ input::placeholder{
     color: #6c757d6b;
     font-weight: 700;
 }
+form{
+    margin-top: 5pc;
+}
 .container1 .texto1{
     display: grid;
     justify-content: center;
     text-align: center;
+    color: #212529;
     margin-top: 40px;
-    font-size: 1.9rem;
+    font-size: 2rem;
     font-weight: 800;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.33);
 }
 .container1 .data{
     position: relative;
     bottom: 60px;
     display: grid;
+    justify-content: center;
     margin-top: 10px;
 }
 .container1 .data input{
@@ -52,32 +57,16 @@ input::placeholder{
     border-bottom: #fbc55f solid 0.50vh;
     border-right: #fbc55f solid 0.50vh;
 }
-.container2{
-    background-color: #fffdf7;
-    border-radius: 0px 10px 10px 0px;
-    width: 360px;
+.container1 .btns{
     display: grid;
     justify-content: center;
-    border-top: #2b2d42 solid 0.40vh;
-    border-right:#2b2d42 solid 0.70vh;
-    border-bottom: #2b2d42 solid 0.70vh;
+    grid-template-columns: auto auto;
 }
-.container2 .data{
-    position: relative;
-    top: 50px;
-    display: grid;
-    margin-top: 10px;
-}
-.container2 .data input{
-    margin-top: 10px;
-    border-radius: 1vh;
-    font-size: 18px;
-    padding-left: 5px;
-    width: 90%;
-    height: 30px;
-    border: #cdd6dd solid 0.50vh;
-    border-bottom: #fbc55f solid 0.50vh;
-    border-right: #fbc55f solid 0.50vh;
+.btns button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 button{
     display: flex;
@@ -88,12 +77,12 @@ button{
     font-weight: 900;
     align-items: center;
     font-size: 1.2rem;
-    color: #000;
+    color: #333;
     border: 0.2vh solid black;
     border-radius: 0.8vh;
     box-shadow: 0.1em 0.1em #000;
     cursor: pointer;
-    margin-top: 13vh;
+    margin-top: 10vh;
     height: 40px;
 }
 button:hover {
@@ -107,12 +96,4 @@ button:active {
 #enviar a, #cancelar a{
     color: #000;
     text-decoration: none;
-}
-#enviar{
-    margin-left: 15px;
-}
-.container1 p{
-    position: relative;
-    bottom: 70px;
-    text-align: center;
 }
