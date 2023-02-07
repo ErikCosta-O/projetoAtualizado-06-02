@@ -1,7 +1,7 @@
 .geral{
     display: flex;
     justify-content: left;
-    margin-top: 3%;
+    margin-top: 5%;
     margin-left: 10%;
     width: 50%;
 }
@@ -132,7 +132,7 @@ button:active {
     color: #000;
     text-decoration: none;
 }
-.entrarContato{
+.outraPagina{
     display: grid;
     justify-content: right;
     align-items: center;
@@ -142,16 +142,16 @@ button:active {
     margin-right: 10vh;
     width: 30%;
 }
-.entrarContato a{
+.outraPagina a{
     text-decoration: none;
 }
-.entrarContato .title2{
+.outraPagina .title2{
     width: 400px;
     font-size: 1.5rem;
     color: #212529;
     text-align: left;
 }
-.entrarContato .btn2{
+.outraPagina .btn2{
     display: flex;
     justify-content: center;
     position: relative;
