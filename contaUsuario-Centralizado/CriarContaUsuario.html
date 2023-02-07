@@ -37,36 +37,57 @@
         <!--Conteudo da pagina-->
         <div class="geral">
             <div class="container1">
-                <div class="texto1">Cadastar
-                    Usuario</div>
+                <div class="texto1">Criar Usuario</div>
                 <form action="../cadastro finalizado/cadFinalizado.html">
                     <div class="data">
+                        <label>Seu nome Completo</label>
                         <input type="text" placeholder="Nome Completo" required>
                     </div>
                     <div class="data">
+                        <label>Data de nascimento</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="data">
+                        <label>Seu melhor Email</label>
                         <input type="email" placeholder="Email" required>
                     </div>
                     <div class="data">
+                        <label>Sua Senha</label>
                         <input type="password" placeholder="Senha" required>
                     </div>
                     <div class="data">
+                        <label>Confirme sua Senha</label>
+                        <input type="password" placeholder="Confirmar senha" required>
+                    </div>
+                    <div class="data">
+                        <label>Seu CPF</label>
                         <input type="text" placeholder="CPF" required>
                     </div>
                     <div class="data">
+                        <label>Telefone com DDD</label>
                         <input type="text" placeholder="Telefone" required>
                     </div>
                     <div class="data">
-                        <select id="redeSocial" >
-                            <option>Selecione uma Rede Social</option>
+                        <label>Escolha uma rede Social</label>
+                        <select id="redeSocial">
+                            <option>...</option>
                             <option value="github">Git Hub</option>
                             <option value="linkedln">Linkedln</option>
                             <option value="instagram">Instagram</option>
                         </select>
                     </div>
                     <div class="data">
-                        <input type="text" placeholder="Experiencia" required>
+                        <label>Selecione sua Experiencia</label>
+                        <select id="exp">
+                            <option>...</option>
+                            <option value="iniciante">Iniciante</option>
+                            <option value="intermediario">Intermediario</option>
+                            <option value="avançado">Avançado</option>
+                            <option value="semExp">Sem Experiencia</option>
+                        </select>
                     </div>
                     <div class="data">
+                        <label>Link da sua rede Social</label>
                         <input type="url" placeholder="Link">
                     </div>
                     <div class="btn">
