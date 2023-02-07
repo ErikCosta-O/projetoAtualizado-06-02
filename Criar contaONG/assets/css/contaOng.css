@@ -7,7 +7,7 @@
 }
 .container1{
     width: 95vh;
-    height: 990px;
+    height: 70pc;
     border-radius: 2vh;
     display: grid;
     background-color: #eff1f3;
@@ -70,7 +70,7 @@ form{
     grid-template-columns: auto auto;
     width: 600px;
     position: relative;
-    bottom: 2vh;
+    bottom: 10vh;
 }
 input:focus{
     outline: 0;
@@ -101,8 +101,8 @@ textarea{
     display: flex;
     justify-content: center;
     position: relative;
-    left: 50%;
-    bottom: 2vh;
+    right: 50%;
+    top: 10vh;
 }
 .btn a{
     text-decoration: none;
@@ -141,7 +141,7 @@ button:active {
     justify-content: right;
     align-items: center;
     position: relative;
-    bottom: 35pc;
+    bottom: 40pc;
     left: 90%;
     margin-right: 10vh;
     width: 0%;
