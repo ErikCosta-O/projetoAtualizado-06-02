@@ -11,6 +11,7 @@
     border-radius: 2vh;
     display: grid;
     justify-content: center;
+    background-color: #c5c5c5;
     margin-bottom: 10vh;
     border-top: #2b2d42 solid 0.40vh;
     border-left:#2b2d42 solid 0.40vh;
@@ -98,7 +99,6 @@ textarea{
     height: 0px;
     position: relative;
     bottom: 2vh;
-    background-color: aquamarine;
 }
 .btn a{
     text-decoration: none;
