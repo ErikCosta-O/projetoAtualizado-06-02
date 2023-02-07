@@ -23,7 +23,7 @@
     display: grid;
     justify-content: center;
     text-align: center;
-    color: #333;
+    color: #212529;
     margin-top: 60px;
     font-size: 2.5rem;
     font-weight: 800;
@@ -76,7 +76,7 @@ button{
     font-weight: 900;
     align-items: center;
     font-size: 1.2rem;
-    color: #000;
+    color: #333;
     border: 0.2vh solid black;
     border-radius: 0.8vh;
     box-shadow: 0.1em 0.1em #000;
