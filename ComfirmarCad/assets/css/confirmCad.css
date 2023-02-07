@@ -5,10 +5,10 @@
     margin-top: 8%;
 }
 .container1{
-    width: 600px;
+    width: 500px;
     height: 490px;
     border-radius: 2vh;
-    color: #fffdf7;
+    background-color: #c5c5c5;
     display: grid;
     margin-bottom: 5vh;
     justify-content: center;
@@ -60,6 +60,7 @@ form{
 .container1 .btns{
     display: grid;
     justify-content: center;
+    display: flex;
     grid-template-columns: auto auto;
 }
 .btns button{
