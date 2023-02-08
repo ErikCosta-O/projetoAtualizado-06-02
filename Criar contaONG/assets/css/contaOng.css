@@ -3,11 +3,10 @@
     justify-content: left;
     margin-top: 5%;
     margin-left: 10%;
-    width: 50%;
 }
 .container1{
-    width: 95vh;
-    height: 70pc;
+    width: 98vh;
+    height: 80pc;
     border-radius: 2vh;
     display: grid;
     background-color: #eff1f3;
@@ -31,6 +30,11 @@
     justify-content: center;
     width: max-content;
 }
+.container1 .data2 label {
+    display: flex;
+    justify-content: center;
+    width: max-content;
+}
 label{
     display: grid;
     position: relative;
@@ -45,6 +49,18 @@ label{
     padding-left: 5px;
     width: 90%;
     height: 30px;
+    border: #cdd6dd solid 0.50vh;
+    border-bottom: #fbc55f solid 0.50vh;
+    border-right: #fbc55f solid 0.50vh;
+}
+.container1 .data2 input{
+    margin-top: 10px;
+    border-radius: 1vh;
+    font-size: 15px;
+    padding-top: 4px;
+    padding-left: 5px;
+    width: 90%;
+    height: 26px;
     border: #cdd6dd solid 0.50vh;
     border-bottom: #fbc55f solid 0.50vh;
     border-right: #fbc55f solid 0.50vh;
@@ -90,7 +106,7 @@ textarea{
     border-bottom: #fbc55f solid 0.50vh;
     border-right: #fbc55f solid 0.50vh;
     resize: none;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .container1 textarea:focus{
     outline: 0;
@@ -102,7 +118,7 @@ textarea{
     justify-content: center;
     position: relative;
     right: 50%;
-    top: 10vh;
+    top: 14vh;
 }
 .btn a{
     text-decoration: none;
@@ -150,7 +166,7 @@ button:active {
     text-decoration: none;
 }
 .outraPagina .title2{
-    width: 400px;
+    width: 300px;
     font-size: 1.5rem;
     color: #212529;
     text-align: left;
