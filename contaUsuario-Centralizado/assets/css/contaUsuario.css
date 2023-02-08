@@ -4,10 +4,9 @@
     justify-content: left;
     margin-top: 5%;
     margin-left: 10%;
-    width: 50%;
 }
 .container1{
-    width: 90vh;
+    width: 50%;
     height: 700px;
     border-radius: 2vh;
     display: grid;
@@ -126,7 +125,7 @@ button:active {
     align-items: center;
     position: relative;
     bottom: 27pc;
-    left: 90%;
+    left: 87%;
     margin-right: 10vh;
     width: 0%;
 }
@@ -134,7 +133,7 @@ button:active {
     text-decoration: none;
 }
 .outraPagina .title2{
-    width: 410px;
+    width: 220px;
     font-size: 1.5rem;
     color: #212529;
     text-align: left;
