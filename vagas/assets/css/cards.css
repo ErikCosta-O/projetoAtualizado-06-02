@@ -54,6 +54,9 @@ h2{
   position: relative;
   top: 20px;
 }
+.card .btn a{
+  text-decoration: none;
+}
 button{
   display: flex;
   justify-content: center;
