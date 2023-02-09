@@ -1,7 +1,7 @@
 .center{
     display: flex;
     justify-content: left;
-    margin-top: 20vh;
+    margin-top: 30vh;
     margin-left: 30vh;
 }
 .img{
@@ -28,10 +28,12 @@
 .desc-conteudo{
     color: #212529;
     width: 100%;
-    height: 40pc;
+    height: 33.4pc;
     position: relative;
-    bottom: 10vh;
-    background-color: #aca6a6;
+    bottom: 16vh;
+    border-radius: 0vh 2vh;
+    border-left: #7ea3f1 solid 0.40vh;
+    border-bottom: #7ea3f1 solid 0.60vh;
 }
 .nome-ong{
     display: flex;
@@ -39,27 +41,27 @@
     font-size: 2.5rem;
     color: #212529;
     font-weight: 600;
-}
-.desc-ONG{
-    display: flex;
-    justify-content: left;
-    text-align: left;
-    width: 99%;
-    background-color: aqua;
+    border-bottom: #fbc55f solid 0.50vh;
     margin-left: 5px;
+    margin-right: 5px;
 }
 .desc-ONG p{
     color: #212529;
     font-size: 1.2rem;
 }
-.dadosONG, .dadosONGredes{
+.dadosONG, .dadosONGredes, .desc-ONG{
     display: flex;
     justify-content: left;
     text-align: left;
-    width: 90%;
     color: #212529;
     font-size: 1.2rem;
+    margin-top: 10px;
     margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: #fbc55f solid 0.50vh;
+}
+.dadosONGredes{
+    border-bottom: transparent;
 }
 .dadosONG li, .dadosONGredes li{
     margin-top: 5px;
@@ -84,6 +86,8 @@
     margin-top: 10px;
     font-size: 1.6rem;
     font-weight: 600;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
