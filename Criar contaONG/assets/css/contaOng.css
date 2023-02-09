@@ -117,8 +117,8 @@ textarea{
     display: flex;
     justify-content: center;
     position: relative;
-    right: 50%;
-    top: 14vh;
+    left: 50%;
+    top: 5vh;
 }
 .btn a{
     text-decoration: none;
