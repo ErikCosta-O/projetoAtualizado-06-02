@@ -1,73 +1,107 @@
 .center{
     display: flex;
-    justify-content: center;
-    margin-bottom: 30vh;
+    justify-content: left;
+    margin-top: 20vh;
+    margin-left: 30vh;
 }
 .img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3.5vh;
-    width: 30%;
+    position: relative;
+    bottom: 31vh;
 }
 .img img{
-    display: flex;
-    justify-content: center;
-    width: 450px;
-    height: 300px;
     border-radius: 2vh;
-    border-top: #2b2d42 solid 0.40vh; border-left:#2b2d42 solid 0.20vh;
-    border-right:#2b2d42 solid 0.60vh; border-bottom: #2b2d42 solid 0.20vh;    
+    border: #cdd6dd solid 0.60vh;
+    width: 400px;
+    height: 300px;    
 }
 .conteudo{
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 50%;
-    height: 50vh;
-    margin-top: 4vh;
-    margin-left: 2vh;
+    position: relative;
+    left: 1vh;
 }
 .desc-conteudo{
     color: #212529;
     width: 100%;
-    height: 90%;
+    height: 40pc;
+    position: relative;
+    bottom: 10vh;
+    background-color: #aca6a6;
 }
 .nome-ong{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     font-size: 2.5rem;
     color: #212529;
     font-weight: 600;
 }
-.desc-vaga, .nome-vaga{
+.desc-ONG{
     display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #000000;
-    justify-content: flex-start;
-    margin-left: 2vh;
+    justify-content: left;
+    text-align: left;
+    width: 99%;
+    background-color: aqua;
+    margin-left: 5px;
 }
-.desc-vaga{
-    border-radius: 2vh 0vh;
-    border-top: #2b2d42 0.50vh solid;
-    border-left: #2b2d42 0.50vh solid;
+.desc-ONG p{
+    color: #212529;
+    font-size: 1.2rem;
 }
-.nome-vaga p{
-    font-size: 2rem;
+.dadosONG, .dadosONGredes{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    width: 90%;
+    color: #212529;
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+.dadosONG li, .dadosONGredes li{
+    margin-top: 5px;
+    list-style: none;
+}
+.dadosONGredes a{
+    text-decoration: none;
+    color: #212529;
+}
+.dadosONGredes a:hover{
+    text-shadow: 0px 0px 14px #b9b9b9;
+    text-decoration: underline 2px #2b2d42;
+    transition-duration: 200ms;
+    transition-delay: 10ms;
+}
+.redes, .lblDados, .lblDesc{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    width: 90%;
+    color: #212529;
+    margin-top: 10px;
+    font-size: 1.6rem;
     font-weight: 600;
 }
-.sobre-vaga p{
-    font-size: 2rem;
-}
-.desc-vaga p{
-    font-size: 1.2rem;
-    height: 20pc;
-    text-align: left;
-    font-style: oblique;
-    color: #212529;
-    margin: 5px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 button{
     display: flex;
     justify-content: center;
