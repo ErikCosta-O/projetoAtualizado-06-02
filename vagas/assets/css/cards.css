@@ -25,14 +25,12 @@ h2{
   justify-content: center;
   font-weight: 600;
   padding: 10px;
-  color: #212529;
 }
 .card-details p{
   padding: 10px;
   text-align: left;
   height: 150px;
   font-size: 15px;
-  color: #212529;
 }
 .card .saiba{
   display: flex;
@@ -54,9 +52,6 @@ h2{
   position: relative;
   top: 20px;
 }
-.card .btn a{
-  text-decoration: none;
-}
 button{
   display: flex;
   justify-content: center;
@@ -65,7 +60,7 @@ button{
   font-weight: 900;
   align-items: center;
   font-size: 1.2rem;
-  color: #212529;
+  color: #333;
   border: 0.2vh solid black;
   border-radius: 0.8vh;
   box-shadow: 0.1em 0.1em #333;
