@@ -28,12 +28,13 @@
 .desc-conteudo{
     color: #212529;
     width: 100%;
-    height: 33.4pc;
+    height: 33pc;
     position: relative;
     bottom: 16vh;
     border-radius: 0vh 2vh;
     border-left: #7ea3f1 solid 0.40vh;
     border-bottom: #7ea3f1 solid 0.60vh;
+    box-shadow: -20px 20px 30px -9px rgba(43,45,66,0.3);
 }
 .nome-ong{
     display: flex;
@@ -94,10 +95,11 @@
     justify-content: center;
     margin-left: 30vh;
     margin-right: 30vh;
-    height: 30pc;
+    height: 40pc;
     border-radius: 0vh 2vh;
     border-left: #7ea3f1 solid 0.40vh;
     border-bottom: #7ea3f1 solid 0.60vh;
+    box-shadow: -20px 20px 30px -9px rgba(43,45,66,0.3);
     margin-bottom: 5vh;
 }
 .nomeVaga{
@@ -115,6 +117,7 @@
     position: relative;
     bottom: 1vh;
     margin-left: 5px;
+    width: 100%;
     height: min-content;
 }
 .descConteudoVaga p{
@@ -128,9 +131,6 @@
     justify-content: center;
     position: relative;
     top: 1vh;
-    width: 40%;
-    height: 20pc;
-
 }
 .lbldesc2{
     display: flex;
@@ -142,6 +142,7 @@
     width: 100%;
     height: min-content;
     margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 .descVaga2 li{
     display: flex;
@@ -178,6 +179,7 @@ button{
 .descVaga2 .btn{
     display: flex;
     justify-content: center;
+    margin-top: 2vh;
     margin-top: 2vh;
     justify-content: last baseline;
 }
