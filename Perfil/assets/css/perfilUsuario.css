@@ -19,10 +19,10 @@
     width: 100%;
     height: 80%;
     border-radius: 10px;
-    background-color: #c5c5c5;
-    border: #2b2d42 solid 0.40vh;
-    border-bottom: #2b2d42 solid 0.70vh;
-    box-shadow: -1px 2px 4px rgba(0,0,0,.25), 1px 1px 3px rgba(0,0,0,.1);
+    background-color: #eff1f3;
+    border: #7ea3f1 solid 0.40vh;
+    border-bottom: #7ea3f1 solid 0.60vh;
+    box-shadow: 0px 5px 21px 2px rgba(43,45,66,0.3);
 }
 .info{
     display: flex;
@@ -32,13 +32,32 @@
     left: 2vh;
     color: #212529;
 }
-.nome-usuario, .email-usuario, .exp, .social, .contato-usuario{
+.endereco{
+    list-style: none;
+}
+.nome-usuario, .social{
     display: flex;
     justify-content: left;
     position: relative;
     top: 10vh;
     margin-top: 5px;
-    border-bottom: #2b2d42 solid 0.40vh
+}
+.contato-usuario{
+    display: flex;
+    justify-content: left;
+    height: min-content;
+    position: relative;
+    top: 20vh;
+    height: min-content;
+}
+.exp p{
+    width: 500px;
+    height: min-content;
+    text-align: left;
+    position: relative;
+    top: 10vh;
+    margin-top: 5px;
+    margin-bottom: 10vh;
 }
 .nome-usuario{
     font-size: 2rem;
@@ -54,14 +73,31 @@
     color: #333;
 }
 .social{
+    position: relative;
+    top: 18vh;
     font-size: 1.2rem;
-    height: 100px;
+    height: 40px;
     border-bottom: #2b2d42 solid 0.40vh
 }
 .social a{
     text-decoration: none;
 }
 .social li, .contato li{
+    display: grid;
+    justify-content: left;
+    flex-direction: column;
+    list-style: none;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 5px;
+}
+.endereco{
+    position: relative;
+    top: 10pc;
+    font-size: 1.2rem;
+    height: 100px;
+}
+.endereco li{
     display: grid;
     justify-content: left;
     flex-direction: column;
