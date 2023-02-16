@@ -63,7 +63,7 @@ input::placeholder{
     display: grid;
     justify-content: left;
     margin-left: 70px;
-    width: 30%;
+    width: 35%;
     border-bottom: #7ea3f1 solid 0.60vh;
 }
 .titulo-texto p {
@@ -72,10 +72,12 @@ input::placeholder{
     font-weight: 500;
     width: auto;
     text-align: left;
+    padding-left: 5px;
 }
 .texto .desc{
     font-size: 1.2rem;
     color: #212529;
     width: 500px;
     text-align: left;
+    padding-left: 5px;
 }
