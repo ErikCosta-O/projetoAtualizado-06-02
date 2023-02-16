@@ -1,9 +1,12 @@
-.container-cards{
-  display: grid;
-  grid-template-columns: auto auto auto;
+.containers-Geral{
+  display: flex;
   justify-content: center;
   margin-top: 20px;
   width: 70pc;
+}
+.card-deck{
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 .card {
   background-color: #fff;
@@ -19,14 +22,14 @@
   height: 250px;
   border-radius: 10px 10px 0px 0px;
 }
-h2{
+.cardTitle{
   font-size: 20px;
   display: flex;
   justify-content: center;
   font-weight: 600;
   padding: 10px;
 }
-.card-details p{
+.card-text{
   padding: 10px;
   text-align: left;
   height: 150px;

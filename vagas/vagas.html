@@ -45,42 +45,73 @@
         </div>
     </section>
     <div class ="volutario">Vagas de voluntariado</div>
-    <div class="categorias">
-        <label for="class">Selecione a categoria</label>
-            <select id="class">
-                <option value="todos">Todos</option>
-                <option value="animais">Animais</option>
-                <option value="reabilitacao">Reabilitação</option>
-                <option value="lgbt">LGBT</option>
-            </select>
+    <section class="texto">
+        <div class="titulo-texto"><p>Como pesquisar</p></div>
+        <div class="desc"><p>Para fazer uma pesquisa, busque pelos dois tipos de vagas que temos ou pelo nome da vagas</p></div>
+    </section>
+    <div class="busca">
+        <input type="text" id="filtroCards" class="form-control" onkeyup="aplicaFiltroCards()" placeholder="Filtro...">
     </div>
     <section class="section2">
-        <div class="container-cards">
-            <div class="card">
-                <img src="./assets/images/combate.png" class="card-media" alt="imagem aqui"/>
-                <div class="card-details">
-                    <h2 class="card-head">detales</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus excepturi odit, unde praesentium qui mollitia suscipit 
-                        nemo debitis repudiandae cumque inventore voluptatem, nihil optio sapiente voluptas quo sunt. Rem, dolorum.</p>
+        <div id="containerCards" class="containers-Geral">
+            <div class="row">
+               <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                       <img src="./assets/images/clinica.png" class="card-media">
+                       <h5 class="cardTitle">Exemplo 1</h5>
+                       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ullam corporis magni, dolorum ducimus, error labore deserunt laboriosam deleniti alias, dolores laborum dignissimos provident ipsum. Commodi, inventore fuga! Architecto, aperiam. Web</p>
+                    </div>
                 </div>
-                <a href="../SobreAvaga/sobreAvaga.html" class="saiba">Saiba mais</a>
-                <div class="btn">
-                    <button type="submit" id="entrar"><a href="../SobreAvaga/sobreAvaga.html">Candidate-se</a></button>
+                <div class="card">
+                    <div class="card-body">
+                       <img src="./assets/images/clinica.png" class="card-media">
+                       <h5 class="cardTitle">Exemplo 2</h5>
+                       <p class="card-text">Last updated 2 mins ago</p>
+                       <a href="../vaga" class="saiba">Saiba mais</a>
+                        <div class="btn">
+                            <button type="submit" id="entrar"><a href="../vaga">Ver mais</a></button>
+                        </div>
+                    </div>
                 </div>
+                <div class="card">
+                    <div class="card-body">
+                       <img src="./assets/images/clinica.png" class="card-media">
+                       <h5 class="cardTitle">Exemplo 2 ipsdo</h5>
+                       <p class="card-text">Last updated 20mins ago</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                       <img src="./assets/images/clinica.png" class="card-media">
+                       <h5 class="cardTitle">Exemplo 3 ipsdo</h5>
+                       <p class="card-text">Last updated 20mins ago</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                       <img src="./assets/images/clinica.png" class="card-media">
+                       <h5 class="cardTitle">Exemplo 3 ipsdo</h5>
+                       <p class="card-text">Last updated 20mins ago</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                       <img src="./assets/images/clinica.png" class="card-media">
+                       <h5 class="cardTitle">Exemplo 3 ipsdo</h5>
+                       <p class="card-text">Last updated 20mins ago</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                       <img src="./assets/images/clinica.png" class="card-media">
+                       <h5 class="cardTitle">Exemplo 3 ipsdo</h5>
+                       <p class="card-text">Last updated 20mins ago</p>
+                    </div>
+                </div>
+               </div>
             </div>
-            <div class="card">
-                <img src="./assets/images/combate.png" class="card-media" alt="imagem aqui"/>
-                <div class="card-details">
-                    <h2 class="card-head">detales</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus excepturi odit, unde praesentium qui mollitia suscipit 
-                        nemo debitis repudiandae cumque inventore voluptatem, nihil optio sapiente voluptas quo sunt. Rem, dolorum.</p>
-                </div>
-                <a href="../SobreAvaga/sobreAvaga.html" class="saiba">Saiba mais</a>
-                <div class="btn">
-                    <button type="submit" id="entrar"><a href="../SobreAvaga/sobreAvaga.html">Candidate-se</a></button>
-                </div>
-            </div>
-        </div>
+         </div>
     </section>
     <!--footer aqui-->
     <div class="loja">
@@ -105,6 +136,7 @@
         </div>
     </footer>
     <!--footer aqui-->
+    <script src="./assets/js/pesquisa.js"></script>
     <script src="./assets/js/carousel.js"></script>
     <script src="./assets/js/load.js"></script>
 </body>
