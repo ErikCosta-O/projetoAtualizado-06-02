@@ -5,7 +5,7 @@ function aplicaFiltroCards() {
     cardContainer = document.getElementById("containerCards");
     cards = cardContainer.getElementsByClassName("card");
     for (i = 0; i < cards.length; i++) {
-        title = cards[i].querySelector(".card-body");
+        title = cards[i].querySelector(".categoria");
         if (title.innerText.toUpperCase().indexOf(filter) > -1) {
             cards[i].style.display = "";
             input.scrollIntoView({ behavior: "smooth" })
@@ -15,4 +15,16 @@ function aplicaFiltroCards() {
             cardContainer.scrollIntoView({ behavior: "smooth" })
         }
     }
+}
+var myVar;
+function focar(){
+    var ts
+    const aviso = document.getElementById("aviso")
+
+    ts = document.getElementById("filtroCards")
+    ts.addEventListener('focus', aviso.style.display= "grid")
+}
+function sair(){
+    var aviso = document.getElementById('aviso')
+    aviso.addEventListener('clickleave', aviso.style.display="none")
 }
