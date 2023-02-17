@@ -2,7 +2,6 @@
 section{
     display: flex;
     justify-content: center;
-    position: relative;
   }
   #slider {
     display: flex;

@@ -3,6 +3,7 @@
   justify-content: center;
   margin-top: 20px;
   width: 70pc;
+  margin-bottom: 2vh;
 }
 .card-deck{
   display: grid;
@@ -28,6 +29,9 @@
   justify-content: center;
   font-weight: 600;
   padding: 10px;
+}
+.categoria{
+  margin-left: 10px;
 }
 .card-text{
   padding: 10px;
