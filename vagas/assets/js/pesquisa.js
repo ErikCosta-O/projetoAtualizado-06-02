@@ -16,7 +16,6 @@ function aplicaFiltroCards() {
         }
     }
 }
-var myVar;
 function focar(){
     var ts
     const aviso = document.getElementById("aviso")
