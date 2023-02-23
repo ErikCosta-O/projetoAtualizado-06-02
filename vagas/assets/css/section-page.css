@@ -72,6 +72,7 @@ aside{
     border: #e63946 solid 0.40vh;
     box-shadow: 0px 5px 21px 2px rgba(43,45,66,0.3);
     z-index: 0;
+<<<<<<< Updated upstream
     animation-name: sair;
     animation-name: animacao;
     animation-duration: 2s
@@ -79,7 +80,15 @@ aside{
 @keyframes animacao { 
     from{ opacity:0 } 
     to{ opacity:1 }
+=======
+    animation-name: animacao;
+    animation-duration: 2s
+>>>>>>> Stashed changes
 }
+@keyframes animacao { 
+    from{ opacity:0 } 
+    to{ opacity:1 }
+  }
 .infoADD{
     color: #333;
     font-size: 1.3rem;

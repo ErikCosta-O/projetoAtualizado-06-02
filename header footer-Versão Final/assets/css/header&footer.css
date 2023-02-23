@@ -51,7 +51,7 @@ nav a :hover{
 /*Footer*/
 .footer-distributed {
   position: absolute;
-  top: 200pc;
+  top: 160pc;
   background: #1f1f1f; /* fallback for old browsers */
   box-sizing: border-box;
   width: 100%;
