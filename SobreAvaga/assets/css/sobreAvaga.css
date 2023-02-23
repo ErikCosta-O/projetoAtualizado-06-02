@@ -177,12 +177,11 @@ button{
     height: 40px;
 }
 .btn{
+    display: grid;
     display: flex;
     justify-content: center;
-    justify-content: last baseline;
     position: relative;
-    bottom: 40vh;
-    right: 22.8%;
+    top: 2vh;
 }
 .btn button{
     margin-bottom: 5px;
