@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/header&footer.css">
+    <link rel="stylesheet" href="./assets/css/criarVaga.css">
+    <link rel="stylesheet" href="./assets/css/load.css">
+    <link rel="icon" href="./assets/images/iconeSite.png">
+    <title>Techno Growingt</title>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <!--header aqui-->
+        <header>
+            <div class="Container">
+                <div class="logo">
+                    <img src="./assets/images/logotipo_sem_ONG- sem fundo.png">
+                </div> 
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <a href="../header footer-Versão Final/PGinicial.html"><li>Home</li></a>
+                            <a href="../header footer-Versão Final/Login.html"><li>Entrar</li></a>
+                            <a href="..//vagas/vagas.html"><li>Vagas</li></a>
+                            <a href="../LOJA-PI/index.html"><li>Loja</li></a>
+                            <a href="../PG-sobre/index.html"><li>Sobre</li></a>
+                            <a href="../PG-Contato/index.html"><li>Contato</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--header aqui-->
+        <!--Conteudo da pagina-->
+        <div class="geral">
+            <div class="container1" id="formulario" onmouseenter="alerta()">
+                <div class="texto1">Crie seu Usuario</div>
+                <form action="../cadastro finalizado/cadFinalizado.html">
+                    <div class="data">
+                        <label>Seu nome Completo</label>
+                        <input type="text" placeholder="Nome Completo" required>
+                    </div>
+                    <div class="data">
+                        <label>Data de nascimento</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="data">
+                        <label>Seu melhor Email</label>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="data">
+                        <label>Sua Senha</label>
+                        <input type="password" placeholder="Senha" required>
+                    </div>
+                    <div class="data">
+                        <label>Confirme sua Senha</label>
+                        <input type="password" placeholder="Confirmar senha" required>
+                    </div>
+                    <div class="data">
+                        <label>Seu CPF</label>
+                        <input type="text" placeholder="CPF" required>
+                    </div>
+                    <div class="data">
+                        <label>Telefone com DDD</label>
+                        <input type="text" placeholder="Telefone" required>
+                    </div>
+                    <div class="data">
+                        <label>Escolha uma rede Social</label>
+                        <select id="redeSocial">
+                            <option>...</option>
+                            <option value="github">Git Hub</option>
+                            <option value="linkedln">Linkedln</option>
+                            <option value="instagram">Instagram</option>
+                        </select>
+                    </div>
+                    <div class="data">
+                        <label>Selecione sua Experiencia</label>
+                        <select id="exp" required>
+                            <option>...</option>
+                            <option value="iniciante">Iniciante</option>
+                            <option value="intermediario">Intermediario</option>
+                            <option value="avançado">Avançado</option>
+                            <option value="semExp">Sem Experiencia</option>
+                        </select>
+                    </div>
+                    <div class="data">
+                        <label>Link da sua rede Social</label>
+                        <input type="url" placeholder="Link">
+                    </div>
+                    <div class="btn">
+                        <button type="submit" id="enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="outraPagina">
+            <div class="title2">Não é Voluntario? Crie como ONG:</div>
+            <div class="btn2">
+                <a href="../Criar contaONG/CriarConstaOng.html"><button type="submit" id="contato">Sou ONG</button></a>
+            </div>
+        </div>
+        <!--Conteudo da pagina-->
+        <!--footer aqui se prescisar
+        <footer class="footer-distributed">
+            <div class="footer-right">
+                <a href="../404/404.html"><img src="./assets/images/linkedin.png"></a>
+                <a href="../404/404.html"><img src="./assets/images/facebook.png"></a>
+                <a href="../404/404.html"><img src="./assets/images/instagram.png"></a>
+            </div>
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a class="link-1" href="./Login.html">Entrar</a>
+                    <a href="../Perfil/perfil.html">Perfil</a>
+                    <a href="../404/404.html">Parceiros</a>
+                    <a href="../PG-sobre/index.html">Sobre</a>
+                    <a href="../PG-Contato/index.html">Contato</a>
+                </p>
+                <p>Techno Growing &copy; 2022</p>
+            </div>
+        </footer>-->
+    </div>
+    <script src="./assets/js/alerta.js"></script>
+    <script src="./assets/js/load.js"></script>
+</body>
+</html>
