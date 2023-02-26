@@ -37,69 +37,38 @@
         <!--Conteudo da pagina-->
         <div class="geral">
             <div class="container1" id="formulario" onmouseenter="alerta()">
-                <div class="texto1">Crie seu Usuario</div>
+                <div class="texto1">Criar sua Vaga</div>
                 <form action="../cadastro finalizado/cadFinalizado.html">
                     <div class="data">
-                        <label>Seu nome Completo</label>
-                        <input type="text" placeholder="Nome Completo" required>
+                        <label>Nome da Vaga</label>
+                        <input type="text" placeholder="Nome vaga" required>
                     </div>
                     <div class="data">
-                        <label>Data de nascimento</label>
-                        <input type="date" required>
+                        <label>Selecione a Categoria</label>
+                        <select id="exp" required>
+                            <option>...</option>
+                            <option value="iniciante">Web</option>
+                            <option value="intermediario">Desing</option>
+                            <option value="avançado">Front-end</option>
+                            <option value="semExp">Back-end</option>
+                        </select>
                     </div>
                     <div class="data">
-                        <label>Seu melhor Email</label>
-                        <input type="email" placeholder="Email" required>
+                        <label>Dias da semana</label>
+                        <input type="text" placeholder="Ex: segunda a sexta" required>
                     </div>
                     <div class="data">
                         <label>Sua Senha</label>
                         <input type="password" placeholder="Senha" required>
                     </div>
                     <div class="data">
-                        <label>Confirme sua Senha</label>
-                        <input type="password" placeholder="Confirmar senha" required>
-                    </div>
-                    <div class="data">
-                        <label>Seu CPF</label>
-                        <input type="text" placeholder="CPF" required>
-                    </div>
-                    <div class="data">
-                        <label>Telefone com DDD</label>
-                        <input type="text" placeholder="Telefone" required>
-                    </div>
-                    <div class="data">
-                        <label>Escolha uma rede Social</label>
-                        <select id="redeSocial">
-                            <option>...</option>
-                            <option value="github">Git Hub</option>
-                            <option value="linkedln">Linkedln</option>
-                            <option value="instagram">Instagram</option>
-                        </select>
-                    </div>
-                    <div class="data">
-                        <label>Selecione sua Experiencia</label>
-                        <select id="exp" required>
-                            <option>...</option>
-                            <option value="iniciante">Iniciante</option>
-                            <option value="intermediario">Intermediario</option>
-                            <option value="avançado">Avançado</option>
-                            <option value="semExp">Sem Experiencia</option>
-                        </select>
-                    </div>
-                    <div class="data">
-                        <label>Link da sua rede Social</label>
-                        <input type="url" placeholder="Link">
+                        <label>Fale sobre a sua ONG</label>
+                        <textarea name="" id="" cols="10" rows="5" placeholder="Sobre Sua Ong" required></textarea>
                     </div>
                     <div class="btn">
                         <button type="submit" id="enviar">Enviar</button>
                     </div>
                 </form>
-            </div>
-        </div>
-        <div class="outraPagina">
-            <div class="title2">Não é Voluntario? Crie como ONG:</div>
-            <div class="btn2">
-                <a href="../Criar contaONG/CriarConstaOng.html"><button type="submit" id="contato">Sou ONG</button></a>
             </div>
         </div>
         <!--Conteudo da pagina-->

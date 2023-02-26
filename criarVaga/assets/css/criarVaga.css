@@ -120,26 +120,3 @@ button:active {
 #entrar a{
     text-decoration: none;
 }
-.outraPagina{
-    display: grid;
-    justify-content: right;
-    align-items: center;
-    position: relative;
-    bottom: 27pc;
-    left: 87%;
-    margin-right: 10vh;
-    width: 0%;
-}
-.outraPagina a{
-    text-decoration: none;
-}
-.outraPagina .title2{
-    width: 220px;
-    font-size: 1.5rem;
-    color: #212529;
-    text-align: left;
-}
-.outraPagina .btn2{
-    display: flex;
-    justify-content: center;
-}
