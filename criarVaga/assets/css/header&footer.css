@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   transition: all 0.4s;
-  scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
 }
 body{
@@ -50,8 +49,8 @@ nav a :hover{
 }
 /*Footer*/
 .footer-distributed {
-  position: absolute;
-  top: 160pc;
+  position: relative;
+  bottom: 0;
   background: #1f1f1f; /* fallback for old browsers */
   box-sizing: border-box;
   width: 100%;
@@ -111,14 +110,6 @@ nav a :hover{
   text-shadow: 0px 0px 14px #e5e5e5;
   transition-duration: 200ms;
   text-decoration: underline;
-}
-.loja{
-  position: fixed;
-  float: right;
-}
-.loja p{
-  display: grid;
-  font-size: 15px;
 }
 /*---------------------------------------*/
 /*scrollbar*/
